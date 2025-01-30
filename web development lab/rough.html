@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Emporium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin: 0 0 20px 0;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .gallery-item figcaption {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DJ Emporium</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to DJ Emporium, your ultimate destination for all things related to music and entertainment. Our emporium is designed to cater to music enthusiasts, professional DJs, and event planners alike. Here, you will find a vast selection of high-quality DJ equipment, including turntables, mixers, speakers, and lighting systems.</p>
+            <p>At DJ Emporium, we believe that every event deserves the perfect soundtrack. Our knowledgeable staff is passionate about music and is here to help you choose the right gear to elevate your event. Whether you're hosting a wedding, a corporate event, or a private party, we provide the tools and expertise to make your occasion unforgettable.</p>
+            <p>Join us at DJ Emporium, where music meets excellence!</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DJ Equipment Rental</td>
+                        <td>Rent high-quality DJ equipment for your events.</td>
+                        <td>$150/day</td>
+                    </tr>
+                    <tr>
+                        <td>Event Planning</td>
+                        <td>Full-service event planning for weddings, parties, and corporate events.</td>
+                        <td>Contact for pricing</td>
+                    </tr>
+                    <tr>
+                        <td>Music Production</td>
+                        <td>Professional music production services for artists and events.</td>
+                        <td>Contact for pricing</td>
+                    </tr>
+                    <tr>
+                        <td>Lighting Services</td>
+                        <td>Specialized lighting setups to enhance your event atmosphere.</td>
+                        <td>$100/event</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="image1.jpg" alt="DJ at an event">
+                    <figcaption>DJ performing live at a wedding.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="image2.jpg" alt="DJ equipment setup">
+                    <figcaption>Professional DJ equipment setup for a party.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="image3.jpg" alt="Lighting setup">
+                    <figcaption>Stunning lighting setup enhancing the atmosphere.</figcaption>
+                </figure>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="inquiryType">Type of Inquiry:</label>
+                <select id="inquiryType" name="inquiryType" required>
+                    <option value="">Select an option...</option>
+                    <option value="equipmentRental">Equipment Rental</option>
+                    <option value="eventPlanning">Event Planning</option>
+                    <option value="musicProduction">Music Production</option>
+                    <option value="generalInquiry">General Inquiry</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DJ Emporium</p>
+    </footer>
+</body>
+</html>
